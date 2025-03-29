@@ -1,0 +1,216 @@
+.new-users-list {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-users-header {
+  margin-bottom: 15px;
+}
+
+.new-users-header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--dark-color);
+}
+
+.new-users-header p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.new-users-header code {
+  background-color: #e9ecef;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-toggle-code {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-toggle-code:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-download-file {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.btn-download-file:hover {
+  background-color: #218838;
+}
+
+.code-container {
+  background-color: #272822;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.code-snippet {
+  margin: 0;
+  color: #f8f8f2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.btn-copy-code {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-copy-code:hover {
+  background-color: #43A047;
+}
+
+.new-users-table {
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.new-users-table-header {
+  display: grid;
+  grid-template-columns: 50px 1.5fr 2fr 1fr 1.5fr;
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.new-users-table-row {
+  display: grid;
+  grid-template-columns: 50px 1.5fr 2fr 1fr 1.5fr;
+  border-top: 1px solid #dee2e6;
+}
+
+.new-users-table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.header-cell, .table-cell {
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-cell {
+  font-weight: bold;
+  color: #495057;
+}
+
+/* Dark mode styles */
+:root[data-theme="dark"] .new-users-list {
+  background-color: #2d3748;
+}
+
+:root[data-theme="dark"] .new-users-header h3 {
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .new-users-header p {
+  color: #cbd5e0;
+}
+
+:root[data-theme="dark"] .new-users-header code {
+  background-color: #4a5568;
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .btn-download-file {
+  background-color: #25923e;
+}
+
+:root[data-theme="dark"] .btn-download-file:hover {
+  background-color: #1e7e34;
+}
+
+:root[data-theme="dark"] .new-users-table {
+  border-color: #4a5568;
+}
+
+:root[data-theme="dark"] .new-users-table-header {
+  background-color: #4a5568;
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .new-users-table-row {
+  border-color: #4a5568;
+}
+
+:root[data-theme="dark"] .new-users-table-row:nth-child(even) {
+  background-color: #3a4659;
+}
+
+:root[data-theme="dark"] .header-cell {
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .table-cell {
+  color: #cbd5e0;
+}
+
+@media (max-width: 768px) {
+  .new-users-table-header,
+  .new-users-table-row {
+    grid-template-columns: 50px 1fr 1.5fr 1fr 1fr;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .new-users-table-header,
+  .new-users-table-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .header-cell:nth-child(3),
+  .header-cell:nth-child(4),
+  .header-cell:nth-child(5),
+  .table-cell:nth-child(3),
+  .table-cell:nth-child(4),
+  .table-cell:nth-child(5) {
+    display: none;
+  }
+} 

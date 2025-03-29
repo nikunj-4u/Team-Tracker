@@ -1,0 +1,112 @@
+/* Dark Mode Styles */
+.dark-mode {
+  --primary-color: #6c63ff;
+  --secondary-color: #845ef7;
+  --dark-color: #f1f3f5;
+  --light-color: #2d333b;
+  --danger-color: #ff6b6b;
+  --success-color: #51cf66;
+  --warning-color: #fcc419;
+  
+  color-scheme: dark;
+  background-color: #1a1d24;
+  color: #e1e1e1;
+}
+
+.dark-mode body {
+  background-color: #1a1d24;
+  color: #e1e1e1;
+}
+
+.dark-mode .dashboard,
+.dark-mode .login-container {
+  background-color: #1a1d24;
+}
+
+.dark-mode .card,
+.dark-mode .task-item-front,
+.dark-mode .task-item-back,
+.dark-mode .employee-card,
+.dark-mode .task-form-container,
+.dark-mode .employee-form-container,
+.dark-mode .communication-container {
+  background-color: #2d333b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .dashboard-header,
+.dark-mode .dashboard-nav,
+.dark-mode .communication-header {
+  background-color: #22272e;
+  border-color: #444c56;
+}
+
+.dark-mode .nav-tab {
+  color: #adbac7;
+}
+
+.dark-mode .nav-tab.active {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.dark-mode .task-header {
+  background-color: #22272e;
+  border-color: #444c56;
+}
+
+.dark-mode .task-details {
+  background-color: #2d333b;
+}
+
+.dark-mode .task-meta,
+.dark-mode .task-info-item .label,
+.dark-mode .message-time,
+.dark-mode .user-info span {
+  color: #adbac7;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea,
+.dark-mode .comment-input,
+.dark-mode .message-input {
+  background-color: #22272e;
+  border-color: #444c56;
+  color: #e1e1e1;
+}
+
+.dark-mode .message-bubble {
+  background-color: #2d333b;
+  color: #e1e1e1;
+}
+
+.dark-mode .message-own .message-bubble {
+  background-color: #3b3f7c;
+}
+
+.dark-mode .date-divider::before,
+.dark-mode .date-divider::after {
+  border-color: #444c56;
+}
+
+.dark-mode .no-comments {
+  color: #8b949e;
+}
+
+.dark-mode .task-title h3 {
+  color: #e1e1e1;
+}
+
+.dark-mode .task-item:hover .task-title h3 {
+  color: var(--primary-color);
+}
+
+/* Dark mode scrollbar */
+.dark-mode .messages-container::-webkit-scrollbar-thumb {
+  background-color: #444c56;
+}
+
+.dark-mode .messages-container::-webkit-scrollbar-thumb:hover {
+  background-color: #576069;
+} 

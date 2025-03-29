@@ -1,0 +1,155 @@
+.system-utility {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.system-utility h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: var(--dark-color);
+}
+
+.system-utility p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.export-section,
+.instructions-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.export-section h4,
+.instructions-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.export-options {
+  margin-bottom: 15px;
+}
+
+.radio-group {
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-export,
+.btn-export-tutorial {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-export {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-export:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-export-tutorial {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.btn-export-tutorial:hover {
+  background-color: #138496;
+}
+
+.instructions-section ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.instructions-section li {
+  margin-bottom: 8px;
+}
+
+.instructions-section code {
+  background-color: #e9ecef;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.note {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9rem;
+}
+
+/* Dark mode styles */
+:root[data-theme="dark"] .system-utility {
+  background-color: #2d3748;
+}
+
+:root[data-theme="dark"] .system-utility h3,
+:root[data-theme="dark"] .export-section h4,
+:root[data-theme="dark"] .instructions-section h4 {
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .system-utility p {
+  color: #cbd5e0;
+}
+
+:root[data-theme="dark"] .export-section,
+:root[data-theme="dark"] .instructions-section {
+  border-color: #4a5568;
+}
+
+:root[data-theme="dark"] .instructions-section code {
+  background-color: #4a5568;
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .note {
+  background-color: #3c3018;
+  border-left-color: #d69e2e;
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .btn-export-tutorial {
+  background-color: #0f7a8a;
+}
+
+:root[data-theme="dark"] .btn-export-tutorial:hover {
+  background-color: #0c6677;
+}
+
+@media (max-width: 768px) {
+  .export-buttons {
+    flex-direction: column;
+  }
+} 
